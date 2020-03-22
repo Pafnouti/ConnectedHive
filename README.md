@@ -1,6 +1,6 @@
 # Connected hives
 
-This project is a [Node.js](https://nodejs.org/en/) backend to store data received from a hive.
+This project is a [Node.js](https://nodejs.org/en/) backend to store data received from (a) hive(s).
 
 ## Installation
 

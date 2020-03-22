@@ -1,6 +1,7 @@
 const SerialPort = require('serialport');
 const Readline = require('@serialport/parser-readline');
 const port = new SerialPort("/dev/ttyUSB0", { baudRate: 57600 });
+const Influx = require('influx');
 
 const parser = new Readline();
 port.pipe(parser);
@@ -20,7 +21,6 @@ fields.forEach(field => {
     });
 });
 
-const Influx = require('influx');
 const influx = new Influx.InfluxDB({
     host: 'localhost',
     database: 'hives',
