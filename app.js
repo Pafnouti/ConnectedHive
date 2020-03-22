@@ -30,18 +30,22 @@ const influx = new Influx.InfluxDB({
 
 
 parser.on('data', function (line) {
+    try {
+        data = JSON.parse(line);
+        console.log(data)
 
-    data = JSON.parse(line);
-    console.log(data)
-
-    var points = []
-    fields.forEach(field => {
-        points.push({
-            measurement: field,
-            tags: { hive: "hive_1" },
-            fields: { value: data[field] }
+        var points = []
+        fields.forEach(field => {
+            points.push({
+                measurement: field,
+                tags: { hive: "hive_1" },
+                fields: { value: data[field] }
+            });
         });
-    });
 
-    influx.writePoints(points);
+        influx.writePoints(points);
+    } catch (error) {
+        console.error(error);
+    }
+
 });
