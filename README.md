@@ -1,30 +1,21 @@
-# Sailboat telemetry
+# Connected hives
 
-This project is a [Node.js](https://nodejs.org/en/) application designed for our MicroTransat sailboat.
-It can be configured to be ran either on the boat's Rasberry Pi or on pc a with a socket connection.
+This project is a [Node.js](https://nodejs.org/en/) backend to store data received from a hive.
 
 ## Installation
 
-The dependencies are [Node.js](https://nodejs.org/en/) and [MongoDB](https://www.mongodb.com/fr).
-You can check [this website](https://nodejs.org/en/download/) to install Node.js and [this one](https://docs.mongodb.com/guides/server/install/) to install MongoDB.
+The dependencies are [Node.js](https://nodejs.org/en/) and [InfluxDB](https://https://www.influxdata.com/).
+You can check [this website](https://nodejs.org/en/download/) to install Node.js.
 
 After having cloned this repository, in order to install all of the Node.js packages required, you should run
 ```sh
 npm install
 ```
 
-
-## Configuration
-
-All of the settings are in the `.env` file. 
-Every one of them should be checked after installation.
-
 ## Usage
 
 Start the program :
 
 ```sh
-node start.js
+node app.js
 ```
-
-The portal should appear on the Raspberry Pi's IP address, port 3000.
