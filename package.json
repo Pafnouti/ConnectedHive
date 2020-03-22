@@ -1,0 +1,23 @@
+{
+  "name": "connectedhive",
+  "version": "1.0.0",
+  "description": "Node.js based service to store serial received data.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pafnouti/ConnectedHive.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pafnouti/ConnectedHive/issues"
+  },
+  "homepage": "https://github.com/Pafnouti/ConnectedHive#readme",
+  "dependencies": {
+    "influx": "^5.5.1",
+    "serialport": "^8.0.7"
+  }
+}
