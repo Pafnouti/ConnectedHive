@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Pafnouti/ConnectedHive#readme",
   "dependencies": {
+    "bme280-sensor": "^0.1.7",
     "influx": "^5.5.1",
     "serialport": "^8.0.7"
   }
